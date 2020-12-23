@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 55" width="55" height="55">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #696b6a } 
+		.shp1 { fill: #252825 } 
+	</style>
+	<g id="footer">
+		<path id="Ellipse 2" class="shp0" d="M28 2C42.36 2 54 13.64 54 28C54 42.36 42.36 54 28 54C13.64 54 2 42.36 2 28C2 13.64 13.64 2 28 2Z" />
+		<path id="Shape 2" class="shp1" d="M29.65 42L23.88 42L23.88 28L21 28L21 23.17L23.88 23.17L23.88 20.28C23.88 16.34 25.5 14 30.13 14L33.98 14L33.98 18.82L31.57 18.82C29.77 18.82 29.65 19.5 29.65 20.76L29.65 23.17L34 23.17L33.49 28L29.65 28L29.65 42L29.65 42Z" />
+	</g>
+</svg>

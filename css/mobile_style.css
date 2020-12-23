@@ -1,0 +1,92 @@
+/* CSS file used for mobile display */
+
+/* style for screen < 1200px */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 90%;
+        box-sizing: content-box;
+    }
+
+    section p {
+        overflow: auto;
+        padding: 0;
+    }
+
+}
+
+/* End condition */
+
+
+/* style for screen < 800px */
+@media screen and (max-width: 850px) {
+
+    main {
+        height: auto;
+    }
+
+    main .flex {
+        /* display: inline-grid; */
+    }
+
+    main nav a {
+        border-radius: unset;
+        width: 50%;
+    }
+}
+
+/* End condition */
+
+
+/* style for screen < 700px */
+@media screen and (max-width: 700px) {
+
+    header {
+        padding-bottom: 50px;
+    }
+
+    header #menu ul {
+        display: block;
+    }
+
+    header #menu li:hover {
+        border-bottom: 1px solid rgba(222, 109, 110, 0.300);
+    }
+
+    .head-top-bkg {
+        height: 100%;
+    }
+
+    aside {
+        text-align: left;
+    }
+
+    .img-article {
+        float: none;
+        padding-bottom: 15px;
+    }
+
+    footer nav {
+        width: 100%;
+    }
+
+    footer nav::after {
+        display: block;
+        content: "";
+        background-image: url('../img/grid.svg');
+        height: 28px;
+        width: 28px;
+        filter: invert();
+        opacity: 50%;
+        cursor: pointer;
+    }
+
+    footer h2 {
+        padding: 20px 0 5px 0;
+    }
+
+    footer nav ul {
+        display: none;
+    }
+}
+
+/* End condition */

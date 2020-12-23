@@ -1,0 +1,398 @@
+/***************************************************
+GLOBAL
+***************************************************/
+
+@font-face {
+    font-family: "Open-Sans";
+    src: url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+        url("../fonts/OpenSans-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "AlteHaas-Grotesk";
+    src: url("../fonts/AlteHaasGroteskBold.woff2") format("woff2"),
+        url("../fonts/AlteHaasGroteskBold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Lavanderia-Regular";
+    src: url("../fonts/Lavanderia-Regular.woff2") format("woff2"),
+        url("../fonts/Lavanderia-Regular.woff") format("woff");
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+}
+
+iframe {
+    max-width: 100%;
+    display: block;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+figure {
+    margin: 0;
+}
+
+body {
+    font-family: "Open-Sans";
+    align-items: center;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+main {
+    height: 1145px;
+    background-color: white;
+    padding: 65px 0 80px 0;
+
+}
+
+.container {
+    width: 950px;
+    margin: auto;
+}
+
+footer {
+    padding-bottom: 35px;
+    background-image: url(../img/footer-texture-30x30.png);
+    background-repeat: repeat;
+    /* Fallback bkg color */
+    background-color: #252525;
+}
+
+/***************************************************
+STRUCTURE
+***************************************************/
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.backimg {
+    /* background-position: center; */
+    background-image: url(../img/fond.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 590px;
+}
+
+.head-top-bkg {
+    height: 90px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.container-top {
+    padding: 20px 0;
+}
+
+#menu {
+    width: 460px;
+}
+
+#menu a {
+    font-size: 17px;
+    color: #454545;
+}
+
+.logo-top {
+    font-family: "Lavanderia-Regular";
+    font-size: 41px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    /* padding: 20px 0; */
+}
+
+.logo-top .color1,
+.logo-top .color2 {
+    font-style: normal;
+}
+
+.logo-top:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.color1 {
+    color: black;
+}
+
+.color2 {
+    color: #b73958;
+}
+
+header h1,
+header p {
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-family: "AlteHaas-Grotesk";
+    font-size: 69px;
+    text-transform: uppercase;
+    padding-top: 310px;
+}
+
+header p {
+    font-size: 22px;
+}
+
+#menu div {
+    /* display: table-cell;
+    height: 50px;
+    vertical-align: middle;
+    text-align: center; */
+    display: table-cell;
+    height: 50px;
+    vertical-align: middle;
+}
+
+#menu a.nav {
+    padding: 0 2px;
+    transition: background-color 0.15s ease-in-out;
+}
+
+#menu a span.login {
+    padding: 6px 13px 4px 13px;
+    transition: background-color 0.15s ease-in-out;
+}
+
+#menu a:hover {
+    display: inline-block;
+    transform: scale(1.05);
+    background-color: #de6d6e;
+    color: white;
+    padding: 5px 2px;
+    border-radius: 4px;
+}
+
+.login {
+    display: block;
+    background-color: #de6d6e;
+    border-radius: 4px;
+    /* height: 27px; */
+    color: white;
+    padding: 6px 13px 4px 13px;
+}
+
+.login:hover {
+    color: #454545;
+}
+
+.login img {
+    width: 14px;
+    height: 15px;
+    margin: 0 6px 3px 0;
+}
+
+main li div {
+    display: table-cell;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+main nav li {
+    border-radius: 50%;
+}
+
+main nav li:nth-child(1) {
+    background-color: #4db9f3;
+}
+
+main nav li:nth-child(2) {
+    background-color: #6fc125;
+}
+
+main nav li:nth-child(3) {
+    background-color: #ff5549;
+}
+
+main nav li:nth-child(4) {
+    background-color: #e38f23;
+}
+
+main h4 {
+    font-size: 15px;
+    color: white;
+    padding-top: 10px;
+    font-weight: normal;
+}
+
+.img-article {
+    float: left;
+    width: 199px;
+    height: 132px;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+main h2 {
+    font-size: 33px;
+    padding-bottom: 20px;
+    color: #404040;
+    font-weight: normal;
+}
+
+main p {
+    font-size: 17px;
+    color: #636363;
+    padding: 0 60px;
+}
+
+main nav {
+    padding: 80px 0 95px 0;
+}
+
+main nav img {
+    width: 85px;
+    height: 85px;
+}
+
+main nav a:hover {
+    opacity: 26%;
+}
+
+#page section {
+    padding-bottom: 80px;
+}
+
+#page section h3 {
+    font-size: 25px;
+    color: #404040;
+    padding-bottom: 16px;
+    text-align: left;
+    padding-left: 20px;
+    font-weight: normal;
+}
+
+#page section p {
+    font-size: 15px;
+    color: #8b8b8b;
+    text-align: left;
+    line-height: 1.4rem;
+}
+
+#page section img {
+    margin-right: 20px;
+}
+
+#page a img:hover {
+    border-radius: 20px 0 20px 0;
+    transform: scale(0.95);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+}
+
+footer h2 {
+    font-size: 21px;
+    font-weight: normal;
+    color: #aeaeae;
+    padding-bottom: 20px;
+}
+
+.footer-left {
+    padding: 30px 0 0 8px;
+    text-align: left;
+}
+
+.footer-left nav {
+    padding-right: 100px;
+}
+
+.footer-left li {
+    padding-bottom: 5px;
+}
+
+.footer-left a {
+    font-size: 15px;
+    color: #8b8b8b;
+}
+
+.footer-right {
+    padding: 55px 8px 0 0;
+    /* text-align: center;
+    align-items: center; */
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-right li {
+    margin-right: 25px;
+}
+
+.footer-right li:last-child {
+    margin: 0;
+}
+
+.footer-right .social div {
+    display: table-cell;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #696b6a;
+    vertical-align: middle;
+}
+
+.footer-right .social img {
+    height: 30px;
+    width: auto;
+}
+
+.footer-right p {
+    font-size: 15px;
+    color: #8b8b8b;
+    padding-top: 28px;
+    font-weight: 300;
+    text-align: left;
+}
+
+footer a:hover {
+    opacity: 70%;
+}
+
+footer .social div:hover {
+    /* background-color: #b73958; */
+    box-shadow: 2px 2px 35px 0px rgba(255, 255, 255, 0.2);
+    
+}
+
+header .logo-top, main a, main img, footer a, footer .social div {
+    /* transition: transform 1s 0s ease-in-out;
+    transition: width 0.5s 0s ease-in-out; */
+    transition: all 0.15s ease-in-out;
+}
